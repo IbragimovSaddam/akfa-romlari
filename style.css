@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.akfaRom {
+    width: 500px;
+    height: 650px;
+    border: 15px ridge brown;
+    display: flex;
+    background-image: url('https://source.unsplash.com/600x750/?hall');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.deraza {
+    width: 100%;
+    border: 15px solid brown;
+    background-color:rgba(26, 21, 21, 0.404)
+}
+
+.akfaRom:hover .chap-akfaRom {
+    transform: perspective(2000px) rotateY(-180deg);
+}
+
+.akfaRom:hover .ong-akfaRom {
+    transform: perspective(2000px) rotateY(180deg);
+}
+
+
+.chap-akfaRom {
+    transform-origin: left;
+    transition: 2s;
+}
+
+
+.ong-akfaRom {
+    transform-origin: right;
+    transition: 2s;
+}
